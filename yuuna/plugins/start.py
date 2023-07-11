@@ -28,7 +28,7 @@ START_PRIVADO = """
 
 
 @yuuna.on_callback_query(filters.regex(pattern=r"^start_back$"))
-@yuuna.on_message(filters.command("start"))
+@yuuna.on_message(filters.command("startxyz"))
 async def start_(c: yuuna, m: Union[Message, CallbackQuery]):
     keyboard = InlineKeyboardMarkup(
         [
